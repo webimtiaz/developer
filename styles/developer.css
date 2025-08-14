@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-
 .work-sans-font {
   font-family: "Work Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  
 }
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /* share style */
 .display-flex{
     display: flex;
 }
 /* dark 02 */
 .text-gray{
-    color: #424242;
+    color: #131313;
 }
 
 /* dark 03 */
@@ -26,7 +30,9 @@
     background-color: rgba(255, 144, 14, 0.1);
 }
 
-
+.text-primart{
+ color: #FF900E;
+}
 
 .btn-primary{
     background-color: #FF900E;
@@ -36,6 +42,24 @@
     font-weight: 600;
     border: none;
     border-radius: 8px;
+}
+
+/* ############################ */
+.hide{
+    display: none;
+}
+/* ############################ */
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+main > section {
+    margin-top: 130px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
 }
 
 /* nav part  */
@@ -73,12 +97,59 @@
 .banner-images{
     width: 100%;
 }
+/* teams and features related styles */
+.teams{
+    align-items: center;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features{
+    max-width: 530px;
+    margin-left: 130px;
+}
+
+
+#quick-list{
+    font-weight: 500;
+}
 
 
 /* responsive part  */
 
 @media screen and (max-width: 576px) {
-    .navber, .nav-links{
+    .navber, 
+    .nav-links, 
+    .teams{
         flex-direction: column;
     }
+    .banner-title {
+        font-size: 2rem;
+    }
+    .team-img-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .team-img-container > img {
+        width: 100%;
+    }
+
+        .our-features {
+        margin-left: 0;
+        max-width: 100%;
+        padding: 0 10px;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .teams{
+        flex-direction: column;
+    }
+    .our-features {
+        margin: 50px auto;
+
+    }
+    
 }
