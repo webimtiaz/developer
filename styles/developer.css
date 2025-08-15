@@ -201,7 +201,8 @@ border-radius: 8px;
 @media screen and (max-width: 576px) {
     .navber, 
     .nav-links, 
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .banner-title {
@@ -222,7 +223,8 @@ border-radius: 8px;
         justify-items: center;
         gap: 50px;
     }
-    .team-img-container > img {
+    .team-img-container > img,
+    .features-img> img {
         width: 100%;
     }
 
@@ -235,7 +237,8 @@ border-radius: 8px;
 
 }
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .our-features {
@@ -250,12 +253,17 @@ border-radius: 8px;
         justify-items:center;
         gap: 20px;
     }
+
         .sponsors-companies{
         grid-template-columns: repeat(3, 1fr);
     }
         .sponsors-companies{
         justify-items: center;
         gap: 50px;
+    }
+        .team-img-container > img,
+    .features-img> img {
+        width: 100%;
     }
     
 }
