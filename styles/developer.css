@@ -247,7 +247,12 @@ border-radius: 8px;
     .features{
         flex-direction: column;
     }
-    
+    .featur-card{
+    transition: transform 2s ;
+}
+.featur-card:hover{
+    transform: scale(1.25);
+}
     .banner-title {
         font-size: 2rem;
     }
