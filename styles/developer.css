@@ -105,6 +105,13 @@ main > section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
+    /* transition: transform 10s; */
+}
+.team-img-container > img:hover{
+    transition: transform 1s ;
+}
+.team-img-container > img:hover{
+    transform: scale(1.5);
 }
 
 .our-features{
@@ -139,7 +146,14 @@ border-radius: 8px;
 .featur-card .features-title{
     font-size: 1.25rem;
     font-weight: 600;
+    
 
+}
+.featur-card{
+    transition: transform 2s ;
+}
+.featur-card:hover{
+    transform: scale(1.25);
 }
 .features-card-discription{
     font-size: 1.2rem;
@@ -243,6 +257,7 @@ border-radius: 8px;
     {
         grid-template-columns: repeat(1,1fr);
     }
+    
     #experieance-badge{
     margin: 30px;
 }
