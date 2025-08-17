@@ -84,8 +84,14 @@ main > section {
     max-width: 1440px;
     margin: 0 auto;
 }
+.banner{
+    background-image: url(../images/banner\ imt.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
 .banner-content{
     max-width: 850px;
+    padding: 200px 0;
     text-align: center;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -93,6 +99,7 @@ main > section {
 .banner-title{
     font-size: 4rem;
     font-weight: 700;
+    color: #131313;
 }
 .banner-images{
     width: 100%;
@@ -101,11 +108,14 @@ main > section {
 .teams{
     align-items: center;
 }
+.team-img-container> img{
+    width: 100%;
+}
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-    /* transition: transform 10s; */
+    
 }
 .team-img-container > img:hover{
     transition: transform 1s ;
@@ -147,7 +157,6 @@ border-radius: 8px;
     font-size: 1.25rem;
     font-weight: 600;
     
-
 }
 .featur-card{
     transition: transform 2s ;
@@ -159,6 +168,9 @@ border-radius: 8px;
     font-size: 1.2rem;
     font-weight: 400;
     margin-top: 10px;
+}
+.features-img> img{
+    width: 100%;
 }
 #experieance-badge{
     padding: 45px 42px;
